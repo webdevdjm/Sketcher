@@ -2,6 +2,8 @@
 
 An etch-a-sketch style drawing application.
 
+[Link to the site](http://webdevdjm.com/Sketcher/)
+
 ## Details
 
 So along with learning HTML and CSS, along with a focus on Javascript and jQuery for this project, my goal in making this was to simulate drawing with a pencil and sketching. The longer you hold down the darker it will get, so shading is possible. There is also an eraser which works in reverse and will slowly remove pixels.
