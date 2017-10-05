@@ -2,7 +2,7 @@
 
 An etch-a-sketch style drawing application.
 
-[Link to the site](http://webdevdjm.github.io/sketcher/)
+[Link to the site](http://webdevdjm.com/sketcher/)
 
 ## Details
 
@@ -30,7 +30,7 @@ Designed and built by David J. Morse aka webdevdjm
 
 MIT License
 
-Copyright (c) [2014] [David J. Morse]
+Copyright (c) 2014 David J. Morse
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
