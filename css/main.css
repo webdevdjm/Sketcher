@@ -24,22 +24,6 @@ html {
 }
 
 /*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
  * A better looking default horizontal rule
  */
 
@@ -108,13 +92,13 @@ textarea {
    ========================================================================== */
 
 body {
-	font: 100% "Myriad Pro",Calibri,"Gill Sans","Gill Sans MT",Myriad,Frutiger,"Frutiger Linotype",Univers,"DejaVu Sans Condensed","Liberation Sans","Nimbus Sans L",Tahoma,Geneva,"Helvetica Neue",Helvetica,Arial,sans-serif; 
-	background: #FFF; 
+	font: 100% "Myriad Pro",Calibri,"Gill Sans","Gill Sans MT",Myriad,Frutiger,"Frutiger Linotype",Univers,"DejaVu Sans Condensed","Liberation Sans","Nimbus Sans L",Tahoma,Geneva,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	background: #FFF;
     margin: 0; padding: 0;
 }
 
 h1 {
-	margin: 0; 
+	margin: 0;
 	padding: 0;
     letter-spacing: -1.7px;
     font-size: 42px;
@@ -122,7 +106,7 @@ h1 {
     text-align: center;
 }
 
-h2 { 
+h2 {
     font-size: 2em;
     margin: 0;
     letter-spacing: -1px;
@@ -145,15 +129,15 @@ h4 {
 }
 
 .header {
-	margin: 0 auto; 
-	width: 960px; 
-	padding: 20px 0; 
-	overflow:hidden; 
+	margin: 0 auto;
+	width: 960px;
+	padding: 20px 0;
+	overflow:hidden;
 	max-width: 98%;
 }
 
 .logo a {
-	color: #333; 
+	color: #333;
 	text-decoration: none;
     font-weight: 100;
     font-size: 1.5em;
@@ -166,7 +150,7 @@ h4 {
 ul {
     list-style: none;
     margin-top: 30px;
-    
+
 }
 
 ul li {
@@ -188,11 +172,11 @@ ul li {
     background:#00CCCC;
     text-align:center;
     padding:5px 20px;
-    
+
     -webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
     transition: all 0.1s;
-    
+
     -webkit-box-shadow: 0px 4px 0px #008080;
         -moz-box-shadow: 0px 4px 0px #008080;
         box-shadow: 0px 4px 0px #008080;
@@ -239,27 +223,37 @@ ul li {
 }
 
 .content {
-	float: left; 
-	width: 100%; 
+	float: left;
+	width: 100%;
 	padding: 0 5% 0 0;
 }
 
 footer {
     margin: 0px auto;
     width: 850px;
-}    
-
-footer .social {
-    padding: 30px 0;
-    width: 425px;
     text-align: center;
 }
 
-footer .copyright {
-    float: right;
-    padding: 30px 0;
-    width: 425px;
-    text-align: center;
+footer .social {
+    padding: 10px;
+}
+
+footer .social ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer .social ul li {
+  padding: 8px;
+  margin: 0;
+}
+
+footer .social a {
+  color: #000;
+}
+
+footer .social a:hover {
+  color: #555;
 }
 
 /* ------------------------ Web Icons ----------------------------*/
@@ -295,25 +289,6 @@ footer .copyright {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
@@ -382,102 +357,4 @@ footer .copyright {
 
 .clearfix:after {
     clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
 }
