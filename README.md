@@ -2,7 +2,7 @@
 
 An etch-a-sketch style drawing application.
 
-[Link to the site](http://webdevdjm.com/Sketcher/)
+[Link to the site](http://webdevdjm.github.io/Sketcher/)
 
 ## Details
 
